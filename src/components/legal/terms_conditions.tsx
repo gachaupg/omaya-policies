@@ -5,17 +5,16 @@ import Footer from "../layout/Footer";
 const TermsAndConditions = () => {
   return (
     <Layout>
-      <div className="max-w-4xl bg-[#1d1d23] mx-auto px-4 py-8">
-        {/* Header */}
-        <header className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-green-800 mb-2">
-            OMAYA Express Exchange
+      <div className="bg-[#1d1d23] text-gray-200 p-6 max-w-4xl mx-auto font-sans leading-relaxed">
+      {/* Header */}
+      <header className="mb-8 border-b border-green-800 pb-4">
+      <h1 className="text-3xl font-bold text-green-800 mb-2">
+            Terms of Use
           </h1>
-          <h2 className="text-2xl font-semibold text-gray-200">Terms of Use</h2>
-          <p className="text-gray-200 mt-2">Last updated: 27 March 2025</p>
+          <p className="text-gray-200 italic mt-2">Last updated: 27 March 2025</p>
         </header>
 
-        <div className="bg-[#1d1d23] shadow-md rounded-lg p-6">
+        <div className="bg-[#1d1d23] shadow-md rounded-lg ">
           {/* Agreement Section */}
           <section className="mb-8">
             <h3 className="text-xl font-bold text-gray-200 mb-4">

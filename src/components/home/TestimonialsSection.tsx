@@ -8,19 +8,19 @@ const testimonials = [
     quote: "OMAYA Express Exchange provided me with a seamless trading experience. Their platform is intuitive and their customer service is exceptional.",
     author: "Ahmed Hussein",
     title: "Crypto Investor",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "https://img.freepik.com/free-photo/worldface-side-view-african-man_53876-23488.jpg?semt=ais_hybrid",
   },
   {
     quote: "As someone new to cryptocurrency, I found OMAYA's educational resources immensely helpful. Their team guided me through my first trades with patience and expertise.",
     author: "Amina Farah",
     title: "New Trader",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "https://www.shutterstock.com/image-photo/beautiful-arab-middleeastern-woman-traditional-260nw-2310426525.jpg",
   },
   {
     quote: "The security measures implemented by OMAYA gave me the confidence to trade larger volumes. Their transparent approach to business is commendable.",
     author: "Mohamed Abdi",
     title: "Business Owner",
-    image: "https://randomuser.me/api/portraits/men/78.jpg",
+    image: "https://img.freepik.com/free-photo/black-man-posing_23-2148171684.jpg",
   },
 ];
 

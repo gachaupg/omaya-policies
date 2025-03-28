@@ -12,29 +12,29 @@ import {
 
 // Sample data for the chart
 const chartData = [
-  { month: "Jan", volume: 400 },
-  { month: "Feb", volume: 500 },
-  { month: "Mar", volume: 450 },
-  { month: "Apr", volume: 700 },
-  { month: "May", volume: 600 },
-  { month: "Jun", volume: 800 },
-  { month: "Jul", volume: 1000 },
-  { month: "Aug", volume: 950 },
-  { month: "Sep", volume: 1200 },
-  { month: "Oct", volume: 1100 },
-  { month: "Nov", volume: 1300 },
-  { month: "Dec", volume: 1500 },
+  { month: "Jan", volume: 0.8 },
+  { month: "Feb", volume: 0.500 },
+  { month: "Mar", volume: 0.450 },
+  { month: "Apr", volume: 0.700 },
+  { month: "May", volume: 0.600 },
+  { month: "Jun", volume: 0.800 },
+  { month: "Jul", volume: 1.000 },
+  { month: "Aug", volume: 0.950 },
+  { month: "Sep", volume: 1.200 },
+  { month: "Oct", volume: 1.100 },
+  { month: "Nov", volume: 1.300 },
+  { month: "Dec", volume: 1.500 },
 ];
 
 const stats = [
   {
     label: "Monthly Exchange Volume",
-    value: "$800K+",
+    value: "$1.5M+",
     description: "During bear market conditions",
   },
   {
     label: "Active Users",
-    value: "2,500+",
+    value: "5000+",
     description: "And growing every day",
   },
   {

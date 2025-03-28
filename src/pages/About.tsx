@@ -224,7 +224,7 @@ const About = () => {
             Experience the security, efficiency, and user-friendliness of our digital asset exchange platform. Get started on your cryptocurrency journey with OMAYA Express Exchange.
           </p>
           <Button className="bg-primary hover:bg-primary/90 text-black" asChild>
-            <Link to="/register">Get Started Now</Link>
+            <Link to="/trade">Get Started Now</Link>
           </Button>
         </div>
       </div>

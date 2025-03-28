@@ -84,7 +84,7 @@ const Services = () => {
             Join OMAYA Express Exchange today and experience secure, efficient cryptocurrency exchange services designed for the Somali market.
           </p>
           <Button className="bg-primary hover:bg-primary/90 text-black" asChild>
-            <Link to="/register">Get Started Now</Link>
+            <Link to="/trade">Get Started Now</Link>
           </Button>
         </div>
       </div>

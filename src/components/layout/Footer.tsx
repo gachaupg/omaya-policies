@@ -37,33 +37,27 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://web.facebook.com/OMAYAExchange?_rdc=1&_rdr"
                 className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/i/flow/login?redirect_after_login=%2Fomayaexchange"
                 className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2FOMAYAExchange%2F&is_from_rlen=1&source=follow_on_link"
                 className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-[#1d8751] transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -118,7 +112,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/services/crypto-exchange"
+                  to="/services"
                   className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 >
                   Cryptocurrency Exchange
@@ -126,7 +120,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/nft-exchange"
+                  to="/services"
                   className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 >
                   NFT Exchange
@@ -142,7 +136,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/support"
+                  to="/services"
                   className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 >
                   Customer Support
@@ -153,9 +147,7 @@ const Footer = () => {
 
           {/* New Legal Policies Column */}
           <div>
-            <h3 className="font-medium text-foreground mb-4">
-              Legal & Policies
-            </h3>
+            <h3 className="font-medium text-foreground mb-4">Our Policies</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-2">
                 <FileText className="h-4 w-4 text-[#1d8751] mt-0.5" />
@@ -185,7 +177,6 @@ const Footer = () => {
                   AML Policy
                 </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -195,34 +186,25 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-[#1d8751] mr-2 mt-0.5" />
                 <span className="text-muted-foreground">
-                  Mogadishu, Somalia
+                  Aaran Plaza, Hodan District Mogadishu, Somalia
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-[#1d8751] mr-2" />
-                <span className="text-muted-foreground">+252 615 000000</span>
+                <span className="text-muted-foreground">+252611273030</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-[#1d8751] mr-2" />
-                <span className="text-muted-foreground">
-                  info@omayaexchange
-                </span>
+                <span className="text-muted-foreground">info@omaya.io</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-muted-foreground">
+        <div className="border-t mt-12  pt-8 flex flex-col md:flex-row justify-center items-center">
+          <p className="text-sm text-center text-muted-foreground">
             &copy; {currentYear} OMAYA Express Exchange. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0 text-sm">
-            <Link
-            to='/'
-             className="text-muted-foreground hover:text-green-800 transition-colors">
-              Crafted with precision and care
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

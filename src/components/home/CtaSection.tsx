@@ -20,7 +20,7 @@ const CtaSection = () => {
               size="lg"
               asChild
             >
-              <Link to="/register">
+              <Link to="/trade">
                 Create an Account <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

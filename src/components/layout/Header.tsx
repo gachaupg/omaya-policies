@@ -11,6 +11,7 @@ import {
   Info,
   BarChart3,
 } from "lucide-react";
+import path from "path";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,9 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "About Us", path: "/about" },
+    {name :'Trade',path:'/trade'},
+    
     { name: "Services", path: "/services" },
     { name: "Market", path: "/market" },
     { name: "Blog", path: "/blog" },

@@ -22,48 +22,48 @@ import { Link } from "react-router-dom";
 
 // Sample data for the charts
 const btcData = [
-  { date: "Jan", price: 28000 },
-  { date: "Feb", price: 29500 },
-  { date: "Mar", price: 27800 },
-  { date: "Apr", price: 31000 },
-  { date: "May", price: 33500 },
-  { date: "Jun", price: 36000 },
-  { date: "Jul", price: 38500 },
-  { date: "Aug", price: 37000 },
-  { date: "Sep", price: 39000 },
-  { date: "Oct", price: 41000 },
-  { date: "Nov", price: 43000 },
-  { date: "Dec", price: 45000 },
+  { date: "Jan", price: 1.5 },
+  { date: "Feb", price: 2.9500 },
+  { date: "Mar", price: 2.7800 },
+  { date: "Apr", price: 3.1000 },
+  { date: "May", price: 3.3500 },
+  { date: "Jun", price: 3.6000 },
+  { date: "Jul", price: 3.8500 },
+  { date: "Aug", price: 3.7000 },
+  { date: "Sep", price: 3.9000 },
+  { date: "Oct", price: 4.1000 },
+  { date: "Nov", price: 4.3000 },
+  { date: "Dec", price: 4.5000 },
 ];
 
 const ethData = [
-  { date: "Jan", price: 1800 },
-  { date: "Feb", price: 1950 },
-  { date: "Mar", price: 2100 },
-  { date: "Apr", price: 2300 },
-  { date: "May", price: 2200 },
-  { date: "Jun", price: 2400 },
-  { date: "Jul", price: 2600 },
-  { date: "Aug", price: 2500 },
-  { date: "Sep", price: 2700 },
-  { date: "Oct", price: 2900 },
-  { date: "Nov", price: 3100 },
-  { date: "Dec", price: 3300 },
+  { date: "Jan", price: 1.800 },
+  { date: "Feb", price: 1.950 },
+  { date: "Mar", price: 2.100 },
+  { date: "Apr", price: 2.300 },
+  { date: "May", price: 2.200 },
+  { date: "Jun", price: 2.400 },
+  { date: "Jul", price: 2.600 },
+  { date: "Aug", price: 2.500 },
+  { date: "Sep", price: 2.700 },
+  { date: "Oct", price: 2.900 },
+  { date: "Nov", price: 3.100 },
+  { date: "Dec", price: 3.300 },
 ];
 
 const volumeData = [
-  { month: "Jan", volume: 400 },
-  { month: "Feb", volume: 500 },
-  { month: "Mar", volume: 450 },
-  { month: "Apr", volume: 700 },
-  { month: "May", volume: 600 },
-  { month: "Jun", volume: 800 },
-  { month: "Jul", volume: 1000 },
-  { month: "Aug", volume: 950 },
-  { month: "Sep", volume: 1200 },
-  { month: "Oct", volume: 1100 },
-  { month: "Nov", volume: 1300 },
-  { month: "Dec", volume: 1500 },
+  { month: "Jan", volume: 0.8 },
+  { month: "Feb", volume: 0.500 },
+  { month: "Mar", volume: 0.450 },
+  { month: "Apr", volume: 0.700 },
+  { month: "May", volume: 0.600 },
+  { month: "Jun", volume: 0.800 },
+  { month: "Jul", volume: 1.000 },
+  { month: "Aug", volume: 0.950 },
+  { month: "Sep", volume: 1.200 },
+  { month: "Oct", volume: 1.100 },
+  { month: "Nov", volume: 1.300 },
+  { month: "Dec", volume: 1.500 },
 ];
 
 const marketTrends = [
@@ -173,9 +173,9 @@ const Market = () => {
                         </defs>
                         <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted))" opacity={0.3} />
                         <XAxis dataKey="month" stroke="hsl(var(--muted-foreground))" />
-                        <YAxis stroke="hsl(var(--muted-foreground))" tickFormatter={(value) => `$${value}K`} />
+                        <YAxis stroke="hsl(var(--muted-foreground))" tickFormatter={(value) => `$${value}M`} />
                         <Tooltip 
-                          formatter={(value) => [`$${value}K`, 'Volume']}
+                          formatter={(value) => [`$${value}M`, 'Volume']}
                           contentStyle={{ 
                             backgroundColor: 'hsl(var(--card))',
                             borderRadius: '8px',
@@ -209,10 +209,10 @@ const Market = () => {
                   {isMounted && (
                     <ResponsiveContainer width="100%" height="100%">
                       <RechartsBarChart data={[
-                        { name: 'USDT', value: 45 },
-                        { name: 'BTC', value: 30 },
-                        { name: 'ETH', value: 15 },
-                        { name: 'Others', value: 10 }
+                        { name: 'USDT', value: 90 },
+                        { name: 'BTC', value: 70 },
+                        { name: 'ETH', value: 55 },
+                        { name: 'Others', value: 30 }
                       ]}>
                         <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted))" opacity={0.3} />
                         <XAxis dataKey="name" stroke="hsl(var(--muted-foreground))" />
@@ -236,8 +236,8 @@ const Market = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {[
-                { label: "Active Users", value: "2,500+", subtext: "And growing every day" },
-                { label: "Monthly Volume", value: "$800K+", subtext: "During bear market" },
+                { label: "Active Users", value: "5000+", subtext: "And growing every day" },
+                { label: "Monthly Volume", value: "$1.5M+", subtext: "During bear market" },
                 { label: "Avg. Transaction", value: "$320", subtext: "Per exchange" },
                 { label: "Supported Coins", value: "10+", subtext: "Major cryptocurrencies" }
               ].map((stat, index) => (

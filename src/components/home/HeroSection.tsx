@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative pt-10 pb-40 overflow-hidden">
+    <section className="relative pt-10 pb-30 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-1/4 w-72 h-72 bg-primary/10 rounded-full filter blur-3xl animate-pulse-soft"></div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 asChild
                 variant="default"
               >
-                <Link to="/market">
+                <Link to="/trade">
                   Start Trading <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -91,19 +91,29 @@ const HeroSection = () => {
           </div>
 
           {/* Image column */}
-          <div className="lg:w-1/2 h-full w-full">
+          <div
+            style={{
+              height: "70vh",
+            }}
+            className="lg:w-1/2  w-full"
+          >
             <div
-              className={`relative w-full h-full rounded-xl overflow-hidden shadow-2xl transition-all duration-1000 delay-1000 transform ${
+              className={`relative w-full h-[400px] rounded-lg overflow-hidden shadow-2xl transition-all duration-1000 delay-1000 transform ${
                 isLoaded
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <div className="a] bg-gradient-to-tr  rounded-xl overflow-hidden flex items-center justify-center relative">
+              <div className="bg-gradient-to-tr rounded-lg overflow-hidden flex items-center justify-center relative">
                 <img
-                  src="https://res.cloudinary.com/pitz/image/upload/v1743095778/Screenshot_2025-03-27_201305_gsc0mz.png"
+                  style={{
+                    height: "70vh",
+                    borderRadius: "0.5rem",
+                    objectFit: "cover",
+                  }}
+                  src="https://res.cloudinary.com/pitz/image/upload/v1743189157/image_tdm2k3.jpg"
                   alt="FLX Trading"
-                  className="w-full h-full object-cover p-4"
+                  className="w-full h-full object-cover rounded-lg"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src =

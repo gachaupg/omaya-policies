@@ -14,6 +14,8 @@ import Blogs from "./pages/Blogs";
 import TermsandConditions from "./components/legal/terms_conditions";
 import PrivacyPolicy from "./components/legal/privacy-policy";
 import AMLTerms from "./components/legal/aml_terms";
+import Coming from "./pages/Coming";
+import WhatsAppFloat from "./pages/flat";
 
 const queryClient = new QueryClient();
 
@@ -33,11 +35,15 @@ const App = () => (
           <Route path="/legal/terms-and-condtions" element={<TermsandConditions />} />
           <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/legal/aml-policy" element={<AMLTerms />} />
+          <Route path="/trade" element={<Coming />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppFloat />
+
       </BrowserRouter>
     </TooltipProvider>
+
   </QueryClientProvider>
 );
 

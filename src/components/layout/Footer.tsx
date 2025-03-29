@@ -109,7 +109,7 @@ const Footer = () => {
 
           <div>
             <h3 className="font-medium text-foreground mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-4 text-sm">
               <li>
                 <Link
                   to="/services"
@@ -128,7 +128,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/security"
+                  to="/services"
                   className="text-muted-foreground hover:text-[#1d8751] transition-colors"
                 >
                   Security & Integrity

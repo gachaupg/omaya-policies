@@ -104,16 +104,18 @@ const HeroSection = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <div className="bg-gradient-to-tr rounded-lg overflow-hidden flex items-center justify-center relative">
+              <div style={{
+                   
+                  }} className="bg-gradient-to-tr overflow-hidden flex items-center justify-center relative w-full">
                 <img
                   style={{
-                    height: "70vh",
+                    width: "100%",
+                    maxHeight: "100%",
                     borderRadius: "0.5rem",
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                   src="https://res.cloudinary.com/pitz/image/upload/v1743189157/image_tdm2k3.jpg"
                   alt="FLX Trading"
-                  className="w-full h-full object-cover rounded-lg"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src =

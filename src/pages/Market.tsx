@@ -383,7 +383,7 @@ const Market = () => {
             Join OMAYA Express Exchange today and leverage our market insights to make informed trading decisions.
           </p>
           <Button className="bg-primary hover:bg-primary/90 text-black" asChild>
-            <Link to="/register">Create Your Account</Link>
+            <Link to="/trade">Create Your Account</Link>
           </Button>
         </div>
       </div>

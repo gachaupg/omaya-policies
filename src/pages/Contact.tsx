@@ -130,12 +130,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full h-[500px] overflow-hidden  border-gray-700 shadow-lg rounded-lg">
-              <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=2.0323,45.3131`}
-                className="w-full h-full"
-                style={{ borderRadius: "16px" }} // Ensure rounded corners
-                allowFullScreen
-              />
+            <img style={{
+              borderRadius: "0.5rem",
+            }} className="object-cover w-full h-full rounded-lg" src="https://res.cloudinary.com/pitz/image/upload/v1743357548/Screenshot_2025-03-30_205820_vboiw7.png" alt="" />
             </div>
           </div>
         </div>

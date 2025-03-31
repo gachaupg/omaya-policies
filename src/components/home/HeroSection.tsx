@@ -104,6 +104,7 @@ const HeroSection = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
+              {/* hello */}
               <div style={{
                    
                   }} className="bg-gradient-to-tr overflow-hidden flex items-center justify-center relative w-full">
